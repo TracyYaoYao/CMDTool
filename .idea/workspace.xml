@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="273669ea-a71b-4b72-be49-af874d14efa0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/CMDTool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CMDTool.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
@@ -24,7 +26,37 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="CMDTool" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
@@ -36,7 +68,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1629702950967</updated>
-      <workItem from="1629702952213" duration="1620000" />
+      <workItem from="1629702952213" duration="2482000" />
+      <workItem from="1630114845397" duration="1121000" />
+      <workItem from="1630369619860" duration="382000" />
+      <workItem from="1630683653847" duration="15000" />
     </task>
     <servers />
   </component>
@@ -44,9 +79,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="209" y="66" key="SettingsEditor" timestamp="1629704551608">
-      <screen x="51" y="23" width="1389" height="877" />
+    <state x="101" y="89" width="1071" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1630115007189">
+      <screen x="54" y="23" width="1386" height="877" />
+    </state>
+    <state x="101" y="89" width="1071" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog/54.23.1386.877@54.23.1386.877" timestamp="1630115007189" />
+    <state x="212" y="66" key="SettingsEditor" timestamp="1630115086266">
+      <screen x="54" y="23" width="1386" height="877" />
     </state>
     <state x="209" y="66" key="SettingsEditor/51.23.1389.877@51.23.1389.877" timestamp="1629704551608" />
+    <state x="212" y="66" key="SettingsEditor/54.23.1386.877@54.23.1386.877" timestamp="1630115086266" />
   </component>
 </project>

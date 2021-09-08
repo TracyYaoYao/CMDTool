@@ -2,27 +2,37 @@
 import requests
 import sys, getopt
 
+# 线上环境 和 本地环境 切换时，需要修改 flag 的值
+# pro: True   dev: False
+flag = True
 data = dict()
 svc_name = ['tinyurl', 'pastebin', 'filesave']
-svc_api = {'tinyurl': 'https://kiki.zone/api/tinyurl/encode',
+
+svc_prod_api = {'tinyurl': 'https://kiki.zone/api/tinyurl/encode',
            'pastebin': 'https://kiki.zone/api/pastebin/submit',
            'filesave': 'https://kiki.zone/api/filesave/put'}
 
-svc_test_map = {'tinyurl': 'http://127.0.0.1:8000/api/tinyurl/encode',
-                'pastebin': 'http://127.0.0.1:8000/api/pastebin/submit',
-                'filesave': 'http://127.0.0.1:8000/api/filesave/put'}
+svc_dev_api = {'tinyurl': 'http://127.0.0.1:8006/api/tinyurl/encode',
+                'pastebin': 'http://127.0.0.1:8006/api/pastebin/submit',
+                'filesave': 'http://127.0.0.1:8006/api/filesave/put'}
+
+svc_api_list = [svc_prod_api, svc_dev_api]
 
 def go_request(svcType, data, type):
     requests.packages.urllib3.disable_warnings()
     if not type:
-        r = requests.post(svcType, data=data, headers={'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'},
-                      verify=False)
+        r = requests.post(svcType, data=data, verify=False)  # # 文件类型的header格式默认即可
+        # 默认header中: headers={'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
     else:
         r = requests.post(svcType, files=data['files'], data = data['key'],verify=False)  # 文件类型的header格式默认即可
     print(r.text)
 
 
 def main():
+    if flag:
+        svc_api = svc_api_list[0]
+    else:
+        svc_api = svc_api_list[1]
     opts, args = getopt.getopt(sys.argv[1:], "ho:", ["help", "output="])  # 用sys.argv[1:]过滤掉第一个参数（它是执行脚本的名字，不应算作参数的一部分）
     svc = args[0].lower()
     type = 0
@@ -57,3 +67,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

@@ -1,4 +1,6 @@
-# 终端输入使用LittleServer功能
+# 终端使用LittleServer功能
+
+
 
 ### 1 接口说明
 
@@ -25,7 +27,7 @@ data = {'files': {'file': f}, 'key': {'key': PASSKEY}}
 
 
 
-###2 使用说明
+### 2 使用说明
 
 切换到项目所在根目录，然后用命令行输入
 
@@ -39,7 +41,7 @@ python main.py pastebin POSTER SYNTAX CONTENT
 
 python main.py filesave FILE PASSKEY
 
-# eg:
+# for example
 (venv) ➜  CMDTool git:(main) ✗ python main.py tinyuRL https://binacs.cn
 https://kiki.zone/r/6VniAr
 
